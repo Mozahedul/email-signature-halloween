@@ -1,152 +1,301 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="x-apple-disable-message-reformatting" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
     <meta
       name="format-detection"
       content="telephone=no,address=no,email=no,date=no,url=no"
     />
     <title>Email Signature</title>
+    <style>
+      @media only screen and (max-width: 350px) {
+        .stack-column {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+        .mobile-image {
+          width: 140px !important;
+          max-width: 140px !important;
+          height: auto !important;
+          margin-left: 0 !important;
+          display: block !important;
+        }
+        .mobile-space-lr {
+          padding-left: 10px !important;
+          padding-right: 10px !important;
+        }
+
+        .mobile-col-right {
+          padding-top: 15px !important;
+          text-align: left !important;
+        }
+
+        .social-table {
+          text-align: left !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body,
+        table,
+        td {
+          background: #111111 !important;
+        }
+
+        td,
+        p {
+          color: #ffffff !important;
+        }
+
+        a {
+          color: #4da3ff !important;
+        }
+
+        .email-bg {
+          background: #111111 !important;
+        }
+
+        .text-darkmode {
+          color: #ffffff !important;
+        }
+      }
+    </style>
   </head>
 
-  <body style="margin: 0; padding: 0; background-color: #ffffff">
+  <body bgcolor="#ffffff" style="margin: 0; padding: 0; background: #ffffff">
     <center>
-      <!-- MAIN CONTAINER -->
       <table
+        class="email-bg"
         role="presentation"
+        width="100%"
         border="0"
         cellpadding="0"
         cellspacing="0"
-        width="100%"
+        style="
+          table-layout: fixed;
+          border-collapse: collapse;
+          max-width: 420px;
+          width: 100%;
+        "
       >
         <tr>
-          <td align="center">
-            <!-- INNER WRAPPER -->
+          <td align="center" class="mobile-space-lr">
+            <!--[if mso]>
+            <table role="presentation" width="420" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+              <td>
+            <![endif]-->
+
             <table
               role="presentation"
+              width="100%"
               border="0"
               cellpadding="0"
               cellspacing="0"
-              width="400"
               style="
-                width: 100%;
-                max-width: 400px;
-                font-family: Arial, Helvetica, sans-serif;
+                font-family: Arial, Helvetica, sans-serif, 'Segoe UI', Roboto;
+                border-collapse: collapse;
               "
             >
               <tr>
-                <td style="padding: 20px 0; line-height: 1.4">
-                  <!-- TWO COLUMN -->
+                <td style="padding: 20px 10px">
+                  <!-- TWO COLUMN WRAPPER -->
                   <table
                     role="presentation"
+                    width="100%"
                     border="0"
                     cellpadding="0"
                     cellspacing="0"
-                    width="100%"
+                    style="border-collapse: collapse"
                   >
                     <tr>
-                      <!-- LEFT COLUMN -->
-                      <td valign="top" width="240" style="vertical-align: top">
-                        <!-- NAME -->
+                      <!--[if mso]>
+                      <td width="260" valign="top">
+                      <![endif]-->
+
+                      <!-- ======================= -->
+                      <!-- ===== LEFT COLUMN ===== -->
+                      <!-- ======================= -->
+                      <td
+                        class="stack-column"
+                        width="260"
+                        valign="top"
+                        style="
+                          width: 260px;
+                          max-width: 260px;
+                          vertical-align: top;
+                        "
+                      >
+                        <!-- ====================== -->
+                        <!-- ===== NAME, SUBTITLE ===== -->
+                        <!-- ====================== -->
                         <table
                           role="presentation"
+                          width="100%"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
+                          style="border-collapse: collapse"
                         >
                           <tr>
                             <td
+                              class="text-darkmode"
                               style="
                                 font-size: 18px;
                                 font-weight: bold;
                                 color: #363636;
+                                line-height: 24px;
+                                mso-line-height-rule: exactly;
                               "
                             >
                               Charlotte Doles
                             </td>
                           </tr>
+
                           <tr>
-                            <td style="font-size: 12px; color: #1d1d1d">
+                            <td
+                              class="text-darkmode"
+                              style="
+                                font-size: 12px;
+                                color: #1d1d1d;
+                                line-height: 18px;
+                                mso-line-height-rule: exactly;
+                              "
+                            >
                               Sales &amp; Marketing Director
                             </td>
                           </tr>
                         </table>
 
-                        <!-- SPACER -->
+                        <!-- ====================== -->
+                        <!-- ======= SPACER ====== -->
+                        <!-- ====================== -->
                         <table
-                          width="100%"
                           role="presentation"
+                          width="100%"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
+                          style="
+                            line-height: 0;
+                            font-size: 0;
+                            border-collapse: collapse;
+                          "
                         >
                           <tr>
                             <td
                               height="10"
-                              style="font-size: 0; line-height: 10px"
+                              style="font-size: 0; line-height: 0"
                             >
                               &nbsp;
                             </td>
                           </tr>
                         </table>
 
-                        <!-- LOGO -->
-                        <img
-                          src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730658532/html-email-signature/email-signature-halloween/Revenue_River_zfqhka.png"
-                          width="160"
-                          alt="Company Logo"
-                          style="display: block; border: 0"
-                        />
-
-                        <!-- SPACER -->
+                        <!-- ====================== -->
+                        <!-- ==== WEBSITE LOGO ==== -->
+                        <!-- ====================== -->
                         <table
+                          width="100%"
                           role="presentation"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
+                          style="border-collapse: collapse"
+                        >
+                          <tr>
+                            <td>
+                              <a href="https://wikipedia.org">
+                                <img
+                                  src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730658532/html-email-signature/email-signature-halloween/Revenue_River_zfqhka.png"
+                                  width="140"
+                                  alt="Company Logo"
+                                  style="
+                                    display: block;
+                                    width: 140px;
+                                    border: 0;
+                                    height: auto;
+                                    text-decoration: none;
+                                    outline: none;
+                                    -ms-interpolation-mode: bicubic;
+                                  "
+                                />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+
+                        <!-- ====================== -->
+                        <!-- ==== HORIZONTAL SPACER ==== -->
+                        <!-- ====================== -->
+                        <table
+                          role="presentation"
                           width="100%"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          style="
+                            line-height: 0;
+                            font-size: 0;
+                            border-collapse: collapse;
+                          "
                         >
                           <tr>
                             <td
                               height="10"
-                              style="font-size: 0; line-height: 10px"
+                              style="font-size: 0; line-height: 0"
                             >
                               &nbsp;
                             </td>
                           </tr>
                         </table>
 
-                        <!-- CONTACT -->
+                        <!-- ====================== -->
+                        <!-- ====== CONTACT ======= -->
+                        <!-- ====================== -->
                         <table
+                          width="100%"
                           role="presentation"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
+                          style="border-collapse: collapse"
                         >
                           <!-- PHONE 1 -->
                           <tr>
                             <td style="padding-top: 6px">
                               <table
+                                width="100%"
                                 role="presentation"
                                 border="0"
                                 cellpadding="0"
                                 cellspacing="0"
+                                style="border-collapse: collapse"
                               >
                                 <tr>
-                                  <!-- ICON -->
-                                  <td style="vertical-align: middle">
+                                  <td valign="middle">
                                     <img
                                       src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647627/html-email-signature/email-signature-halloween/mobile-icon_gbp0xk.png"
                                       width="16"
-                                      style="display: block; border: 0"
-                                      alt="mobile"
+                                      alt="Call Mobile Number"
+                                      style="
+                                        display: block;
+                                        border: 0;
+                                        height: auto;
+                                        text-decoration: none;
+                                        outline: none;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
                                     />
                                   </td>
 
-                                  <!-- SPACE -->
                                   <td
                                     width="6"
                                     style="font-size: 0; line-height: 0"
@@ -154,21 +303,26 @@
                                     &nbsp;
                                   </td>
 
-                                  <!-- TEXT -->
                                   <td
+                                    valign="middle"
                                     style="
+                                      font-family:
+                                        Arial, Helvetica, sans-serif,
+                                        'Segoe UI', Roboto;
                                       font-size: 12px;
-                                      vertical-align: middle;
+                                      line-height: 18px;
+                                      mso-line-height-rule: exactly;
                                     "
                                   >
                                     <a
-                                      href="https://wa.me/+8801778801438"
+                                      class="text-darkmode"
+                                      href="tel:+8801778801438"
                                       style="
                                         text-decoration: none;
                                         color: #424242;
                                       "
                                     >
-                                      +91 85 31 09 081
+                                      +880 17 78 80 1434
                                     </a>
                                   </td>
                                 </tr>
@@ -180,23 +334,30 @@
                           <tr>
                             <td style="padding-top: 6px">
                               <table
+                                width="100%"
                                 role="presentation"
                                 border="0"
                                 cellpadding="0"
                                 cellspacing="0"
+                                style="border-collapse: collapse"
                               >
                                 <tr>
-                                  <!-- ICON -->
-                                  <td style="vertical-align: middle">
+                                  <td valign="middle">
                                     <img
                                       src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647628/html-email-signature/email-signature-halloween/phone-icon_ww7y5o.png"
                                       width="16"
-                                      style="display: block; border: 0"
-                                      alt="phone"
+                                      alt="Phone"
+                                      style="
+                                        display: block;
+                                        border: 0;
+                                        height: auto;
+                                        text-decoration: none;
+                                        outline: none;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
                                     />
                                   </td>
 
-                                  <!-- SPACE -->
                                   <td
                                     width="6"
                                     style="font-size: 0; line-height: 0"
@@ -204,21 +365,26 @@
                                     &nbsp;
                                   </td>
 
-                                  <!-- TEXT -->
                                   <td
+                                    valign="middle"
                                     style="
+                                      font-family:
+                                        Arial, Helvetica, sans-serif,
+                                        'Segoe UI', Roboto;
                                       font-size: 12px;
-                                      vertical-align: middle;
+                                      line-height: 18px;
+                                      mso-line-height-rule: exactly;
                                     "
                                   >
                                     <a
-                                      href="tel:+91476987369"
+                                      class="text-darkmode"
+                                      href="tel:+8801738648749"
                                       style="
                                         text-decoration: none;
                                         color: #424242;
                                       "
                                     >
-                                      +91 47 69 87 369
+                                      +880 17 38 64 8749
                                     </a>
                                   </td>
                                 </tr>
@@ -230,23 +396,30 @@
                           <tr>
                             <td style="padding-top: 6px">
                               <table
+                                width="100%"
                                 role="presentation"
                                 border="0"
                                 cellpadding="0"
                                 cellspacing="0"
+                                style="border-collapse: collapse"
                               >
                                 <tr>
-                                  <!-- ICON -->
-                                  <td style="vertical-align: middle">
+                                  <td valign="middle">
                                     <img
                                       src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647627/html-email-signature/email-signature-halloween/email-icon_tcikxr.png"
                                       width="16"
-                                      style="display: block; border: 0"
-                                      alt="email"
+                                      alt="Email"
+                                      style="
+                                        display: block;
+                                        border: 0;
+                                        height: auto;
+                                        text-decoration: none;
+                                        outline: none;
+                                        -ms-interpolation-mode: bicubic;
+                                      "
                                     />
                                   </td>
 
-                                  <!-- SPACE -->
                                   <td
                                     width="6"
                                     style="font-size: 0; line-height: 0"
@@ -254,14 +427,19 @@
                                     &nbsp;
                                   </td>
 
-                                  <!-- TEXT -->
                                   <td
+                                    valign="middle"
                                     style="
+                                      font-family:
+                                        Arial, Helvetica, sans-serif,
+                                        'Segoe UI', Roboto;
                                       font-size: 12px;
-                                      vertical-align: middle;
+                                      line-height: 18px;
+                                      mso-line-height-rule: exactly;
                                     "
                                   >
                                     <a
+                                      class="text-darkmode"
                                       href="mailto:charl.doles@codenine.com"
                                       style="
                                         text-decoration: none;
@@ -278,97 +456,199 @@
                         </table>
                       </td>
 
-                      <!-- RIGHT COLUMN -->
-                      <td
-                        valign="top"
-                        width="160"
-                        style="vertical-align: top; text-align: right"
-                      >
-                        <img
-                          src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647628/html-email-signature/email-signature-halloween/halloween-party_olzq0f.png"
-                          width="160"
-                          alt="Banner"
-                          style="display: block; border: 0"
-                        />
+                      <!--[if mso]>
+                        </td>
+                          <td width="140" valign="top">
+                        <![endif]-->
 
-                        <!-- SPACER -->
+                      <!-- ======================= -->
+                      <!-- ===== RIGHT COLUMN ===== -->
+                      <!-- ======================= -->
+                      <td
+                        class="stack-column mobile-col-right"
+                        width="140"
+                        valign="top"
+                        align="right"
+                        style="
+                          width: 140px;
+                          max-width: 140px;
+                          vertical-align: top;
+                        "
+                      >
                         <table
                           role="presentation"
+                          width="100%"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
-                          width="100%"
+                          style="border-collapse: collapse"
                         >
                           <tr>
                             <td
                               height="10"
-                              style="font-size: 0; line-height: 10px"
+                              style="font-size: 0; line-height: 0"
+                            >
+                              <img
+                                class="mobile-image"
+                                src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647628/html-email-signature/email-signature-halloween/halloween-party_olzq0f.png"
+                                alt="Revenue River Halloween Email Banner"
+                                width="140"
+                                style="
+                                  width: 140px;
+                                  height: auto;
+                                  text-decoration: none;
+                                  outline: none;
+                                  display: block;
+                                  border: 0;
+                                  -ms-interpolation-mode: bicubic;
+                                "
+                              />
+                            </td>
+                          </tr>
+                        </table>
+
+                        <table
+                          role="presentation"
+                          width="100%"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                          style="border-collapse: collapse"
+                        >
+                          <tr>
+                            <td
+                              height="10"
+                              style="font-size: 0; line-height: 0"
                             >
                               &nbsp;
                             </td>
                           </tr>
                         </table>
 
-                        <!-- SOCIAL -->
+                        <!-- ======================= -->
+                        <!-- ===== SOCIAL ICONS ====== -->
+                        <!-- ======================= -->
                         <table
+                          width="100%"
                           role="presentation"
                           border="0"
                           cellpadding="0"
                           cellspacing="0"
-                          align="right"
-                          style="font-size: 0"
+                          style="border-collapse: collapse"
                         >
                           <tr>
-                            <td style="padding-right: 3px">
-                              <a href="https://facebook.com">
-                                <img
-                                  src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647627/html-email-signature/email-signature-halloween/fb_zlqpus.png"
-                                  width="16"
-                                  style="display: block; border: 0"
-                                  alt="facebook"
-                                />
-                              </a>
-                            </td>
-                            <td style="padding-right: 3px">
-                              <a href="https://x.com">
-                                <img
-                                  src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647634/html-email-signature/email-signature-halloween/tt_qxwt4e.png"
-                                  width="16"
-                                  style="display: block; border: 0"
-                                  alt="twitter"
-                                />
-                              </a>
-                            </td>
-                            <td>
-                              <a href="https://youtube.com">
-                                <img
-                                  src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647635/html-email-signature/email-signature-halloween/yt_fqx0nl.png"
-                                  width="16"
-                                  style="display: block; border: 0"
-                                  alt="YouTube"
-                                />
-                              </a>
+                            <td class="social-table" align="right">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellspacing="0"
+                                cellpadding="0"
+                                style="border-collapse: collapse"
+                              >
+                                <tr>
+                                  <td
+                                    style="
+                                      padding-right: 6px;
+                                      font-family:
+                                        Arial, Helvetica, sans-serif,
+                                        'Segoe UI', Roboto;
+                                    "
+                                  >
+                                    <a href="https://facebook.com">
+                                      <img
+                                        src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647627/html-email-signature/email-signature-halloween/fb_zlqpus.png"
+                                        width="16"
+                                        alt="Facebook Icon"
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          text-decoration: none;
+                                          outline: none;
+                                          height: auto;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                      />
+                                    </a>
+                                  </td>
+
+                                  <td
+                                    style="
+                                      padding-right: 6px;
+                                      font-family:
+                                        Arial, Helvetica, sans-serif,
+                                        'Segoe UI', Roboto;
+                                    "
+                                  >
+                                    <a href="https://twitter.com">
+                                      <img
+                                        src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647634/html-email-signature/email-signature-halloween/tt_qxwt4e.png"
+                                        width="16"
+                                        alt="Twitter Icon"
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          text-decoration: none;
+                                          outline: none;
+                                          height: auto;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                      />
+                                    </a>
+                                  </td>
+
+                                  <td
+                                    style="
+                                      font-family: Arial, Helvetica, sans-serif;
+                                    "
+                                  >
+                                    <a href="https://youtube.com">
+                                      <img
+                                        src="https://res.cloudinary.com/ultimate-technology/image/upload/v1730647635/html-email-signature/email-signature-halloween/yt_fqx0nl.png"
+                                        width="16"
+                                        alt="YouTube Icon"
+                                        style="
+                                          display: block;
+                                          border: 0;
+                                          text-decoration: none;
+                                          outline: none;
+                                          height: auto;
+                                          -ms-interpolation-mode: bicubic;
+                                        "
+                                      />
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
                             </td>
                           </tr>
                         </table>
                       </td>
+
+                      <!--[if mso]>
+                      </td>
+                      <![endif]-->
                     </tr>
                   </table>
 
-                  <!-- FOOTER TEXT -->
+                  <!-- ====================== -->
+                  <!-- ======= FOOTER ======= -->
+                  <!-- ====================== -->
                   <table
                     role="presentation"
+                    width="100%"
                     border="0"
                     cellpadding="0"
                     cellspacing="0"
-                    width="100%"
+                    style="border-collapse: collapse"
                   >
                     <tr>
                       <td
                         style="
-                          font-size: 12px;
-                          color: #aaaaaa;
                           padding-top: 10px;
+                          font-size: 12px;
+                          line-height: 18px;
+                          color: #aaaaaa;
+                          mso-line-height-rule: exactly;
                         "
                       >
                         This email is confidential and intended only for the
@@ -379,6 +659,12 @@
                 </td>
               </tr>
             </table>
+
+            <!--[if mso]>
+            </td>
+                </tr>
+                </table>
+            <![endif]-->
           </td>
         </tr>
       </table>
